@@ -4,7 +4,7 @@ set -o xtrace
 
 # Define variables.
 BRANCH="master"
-TMP_DIR=`mktemp -d`
+TMP_DIR=`mktemp -d -t ''`
 REPO_DIR="$TMP_DIR/homebrew-installer"
 
 # Install XCode.
@@ -14,6 +14,7 @@ sudo xcodebuild -license
 # Install Homebrew.
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew update && brew upgrade && brew doctor
+brew list | xargs brew uninstall --force -
 brew install wget git curl
 
 # Install Homebrew Cask.
@@ -22,6 +23,9 @@ brew update && brew upgrade && brew doctor
 brew cask list | xargs brew cask uninstall --force -
 
 # Install Homebrew-PHP.
+brew untap homebrew/dupes 
+brew untap homebrew/versions
+brew untap homebrew/homebrew-php
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
