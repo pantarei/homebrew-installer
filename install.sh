@@ -5,33 +5,42 @@ set -o xtrace
 # Define variables.
 BRANCH="master"
 TMP_DIR=`mktemp -d`
+REPO_DIR="$TMP_DIR/homebrew-installer"
 
-# Clone repo into temp folder.
-cd $TMP_DIR
-git clone --recursive --branch $BRANCH https://github.com/pantarei/homebrew-installer.git
-
-# Install XCode
+# Install XCode.
 xcode-select --install
 sudo xcodebuild -license
 
-# Install Homebrew
+# Install Homebrew.
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-brew update
-brew upgrade
-brew doctor
-brew cleanup
+brew update && brew upgrade && brew doctor
+brew install wget git curl
 
-# Install Homebrew Cask
+# Install Homebrew Cask.
 brew install caskroom/cask/brew-cask
+brew update && brew upgrade && brew doctor
+brew cask list | xargs brew cask uninstall --force -
 
-# brew tap
+# Install Homebrew-PHP.
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
+brew update && brew upgrade && brew doctor
+brew install php55
 
-# Install packages
-cat $TMP_DIR/homebrew-installer/homebrew.list | xargs brew install -
-cat $TMP_DIR/homebrew-installer/homebrew-cask.list | xargs brew cask install --force -
+# Clone repo into temp folder.
+git clone https://github.com/pantarei/homebrew-installer.git $REPO_DIR
 
-# Copy .bash_profile
-cp $TMP_DIR/homebrew-installer/.bash_profile $HOME/
+# Install packages.
+cat $REPO_DIR/homebrew.list | xargs brew install --force -
+cat $REPO_DIR/homebrew-cask.list | xargs brew cask install --force -
+
+# Copy .bash_profile.
+cp $REPO_DIR/.bash_profile $HOME/
+
+# Reset launchpad.
+rm ~/Library/Application\ Support/Dock/*.db
+killall Dock
+
+# Double confirm all works.
+brew update && brew upgrade && brew doctor
