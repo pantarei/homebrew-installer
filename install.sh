@@ -4,7 +4,12 @@ set -o xtrace
 
 # Define variables.
 BRANCH="master"
-TMP_DIR=`mktemp -d -t ''`
+
+TMP_DIR=`mktemp -d`
+if [ -z "$TMP_DIR" ]; then
+    TMP_DIR=`mktemp -d -t ''`
+fi
+
 REPO_DIR="$TMP_DIR/homebrew-installer"
 
 # Install XCode.
