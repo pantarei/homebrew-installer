@@ -2,16 +2,6 @@
 
 set -o xtrace
 
-# Define variables.
-BRANCH="master"
-
-TMP_DIR=`mktemp -d`
-if [ -z "$TMP_DIR" ]; then
-    TMP_DIR=`mktemp -d -t ''`
-fi
-
-REPO_DIR="$TMP_DIR/homebrew-installer"
-
 # Install XCode.
 xcode-select --install
 sudo xcodebuild -license
@@ -19,7 +9,13 @@ sudo xcodebuild -license
 # Install Homebrew.
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 brew update && brew upgrade && brew doctor
-brew install wget git curl
+brew install wget git curl coreutils
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+
+# Define variables.
+BRANCH="master"
+TMP_DIR=`mktemp -d`
+REPO_DIR="$TMP_DIR/homebrew-installer"
 
 # Install Homebrew Cask.
 brew install caskroom/cask/brew-cask
