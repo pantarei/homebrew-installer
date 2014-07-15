@@ -34,16 +34,10 @@ brew install php55
 # Clone repo into temp folder.
 git clone https://github.com/pantarei/homebrew-installer.git $REPO_DIR
 
+# Copy .bash_profile.
+cp $REPO_DIR/.bash_profile $HOME/
+source $HOME/.bash_profile
+
 # Install packages.
 cat $REPO_DIR/homebrew.list | xargs brew install --force -
 cat $REPO_DIR/homebrew-cask.list | xargs brew cask install --force -
-
-# Copy .bash_profile.
-cp $REPO_DIR/.bash_profile $HOME/
-
-# Reset launchpad.
-rm ~/Library/Application\ Support/Dock/*.db
-killall Dock
-
-# Double confirm all works.
-brew update && brew upgrade && brew doctor
