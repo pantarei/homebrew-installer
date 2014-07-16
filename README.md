@@ -7,6 +7,10 @@ Run this script with:
 
     bash <(curl -sL https://github.com/pantarei/homebrew-installer/raw/master/install.sh)
 
+Cleanup dashboard and double check with this script with:
+
+    bash <(curl -sL https://github.com/pantarei/homebrew-installer/raw/master/post_install.sh)
+
 License
 -------
 
