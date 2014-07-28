@@ -41,3 +41,7 @@ source $HOME/.bash_profile
 # Install packages.
 cat $REPO_DIR/homebrew.list | xargs brew install --force -
 cat $REPO_DIR/homebrew-cask.list | xargs brew cask install --force -
+
+# Post-install cleanup
+sudo /bin/cp -RfX /usr/local/opt/osxfuse/Library/Filesystems/osxfusefs.fs /Library/Filesystems
+sudo chmod +s /Library/Filesystems/osxfusefs.fs/Support/load_osxfusefs
