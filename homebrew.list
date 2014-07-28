@@ -13,11 +13,13 @@ dos2unix
 freetype
 gettext
 git
+git-flow
 glib
 gnu-sed
 graphviz
 gzip
 htop-osx
+hub
 icu4c
 jpeg
 libevent
