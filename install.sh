@@ -18,7 +18,7 @@ TMP_DIR=`mktemp -d`
 REPO_DIR="$TMP_DIR/homebrew-installer"
 
 # Install Homebrew Cask.
-brew install caskroom/cask/brew-cask
+brew install --HEAD caskroom/cask/brew-cask
 brew update && brew upgrade && brew doctor
 
 # Install Homebrew-PHP.
