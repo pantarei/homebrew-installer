@@ -2,7 +2,6 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export PATH=/usr/local/opt/gnu-sed/libexec/gnubin:$PATH
-export PATH=/usr/local/opt/ruby/bin:$PATH
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
