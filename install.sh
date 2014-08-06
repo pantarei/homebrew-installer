@@ -25,6 +25,9 @@ brew tap homebrew/homebrew-php
 brew update && brew upgrade && brew doctor
 brew install php55
 
+# Install Caskroom-fonts.
+brew tap caskroom/fonts
+
 # Clone repo into temp folder.
 git clone https://github.com/pantarei/homebrew-installer.git $TMP_DIR
 
