@@ -4,6 +4,7 @@ autoconf
 bash
 bmon
 brew-cask
+cabextract
 colordiff
 composer
 coreutils
@@ -60,5 +61,6 @@ unzip
 vim
 watch
 wget
+winetricks
 xz
 zlib

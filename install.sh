@@ -15,7 +15,7 @@ brew install wget git curl coreutils
 PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 
 # Install Homebrew Cask.
-brew install --HEAD caskroom/cask/brew-cask
+brew install caskroom/cask/brew-cask
 brew update && brew upgrade && brew doctor
 
 # Install Homebrew-PHP.
