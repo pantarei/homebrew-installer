@@ -1,3 +1,4 @@
+export PATH="$HOME/Applications/Android Studio.app/sdk/platform-tools":$PATH
 export PATH="$HOME/Applications/Android Studio.app/sdk/tools":$PATH
 export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH=/usr/local/bin:$PATH
