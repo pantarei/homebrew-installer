@@ -1,10 +1,10 @@
-export PATH="$HOME/ApplicationsAndroid Studio.app/sdk/tools":$PATH
+export PATH="$HOME/Applications/Android Studio.app/sdk/tools":$PATH
 export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export PATH=/usr/local/opt/gnu-sed/libexec/gnubin:$PATH
 
-export ANDROID_HOME="$HOME/ApplicationsAndroid Studio.app/sdk"
+export ANDROID_HOME="$HOME/Applications/Android Studio.app/sdk"
 
 if [ -x /usr/local/opt/coreutils/libexec/gnubin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
