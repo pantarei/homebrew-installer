@@ -1,3 +1,6 @@
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 export PATH="$HOME/Applications/Android Studio.app/sdk/platform-tools":$PATH
 export PATH="$HOME/Applications/Android Studio.app/sdk/tools":$PATH
 export PATH=$HOME/.composer/vendor/bin:$PATH
