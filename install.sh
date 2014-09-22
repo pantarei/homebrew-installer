@@ -23,7 +23,7 @@ brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
 brew update && brew upgrade && brew doctor
-brew install php55
+brew install php56
 
 # Install Caskroom-fonts.
 brew tap caskroom/fonts
