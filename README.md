@@ -5,7 +5,7 @@ Wrapper for [homebrew](https://github.com/Homebrew/homebrew) installation.
 
 Run this script with:
 
-    bash <(curl -sL https://github.com/pantarei/homebrew-installer/raw/master/install.sh)
+    bash <(curl -fsSL https://raw.githubusercontent.com/pantarei/homebrew-installer/master/install.sh)
 
 License
 -------
