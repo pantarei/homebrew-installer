@@ -50,6 +50,7 @@ readline
 rename
 ruby
 sshfs
+tor
 unixodbc
 unzip
 vim

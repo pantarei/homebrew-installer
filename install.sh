@@ -42,4 +42,6 @@ cat $TMP_DIR/homebrew-cask.list | xargs brew cask install --force -
 # Post-install cleanup
 sudo /bin/cp -RfX /usr/local/opt/osxfuse/Library/Filesystems/osxfusefs.fs /Library/Filesystems
 sudo chmod +s /Library/Filesystems/osxfusefs.fs/Support/load_osxfusefs
+ln -sfv /usr/local/opt/tor/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.tor.plist
 defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
