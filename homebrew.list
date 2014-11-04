@@ -35,7 +35,6 @@ mysql
 nmap
 node
 openssl
-osxfuse
 p7zip
 pcre
 php56
@@ -50,7 +49,6 @@ pwgen
 readline
 rename
 ruby
-sshfs
 tor
 unixodbc
 unzip
