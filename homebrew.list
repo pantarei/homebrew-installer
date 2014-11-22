@@ -32,6 +32,7 @@ libyaml
 mcrypt
 memcached
 mhash
+minicom
 mysql
 nmap
 node
