@@ -2,6 +2,8 @@ android-sdk
 ant
 autoconf
 bash
+bash-completion
+bash-git-prompt
 bmon
 brew-cask
 cabextract
@@ -18,6 +20,7 @@ git-flow
 glib
 gnu-sed
 graphviz
+grunt-completion
 gzip
 htop-osx
 hub
