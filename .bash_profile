@@ -6,7 +6,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
-export STUDIO_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk
+export STUDIO_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk
 
 if [ -x /usr/local/bin/gdircolors ]; then
     eval "$(gdircolors -b)"
