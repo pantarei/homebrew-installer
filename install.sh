@@ -29,6 +29,9 @@ brew install php56
 # Install Caskroom-fonts.
 brew tap caskroom/fonts
 
+# Install Homebrew-completions.
+brew tap homebrew/completions
+
 # Clone repo into temp folder.
 git clone https://github.com/pantarei/homebrew-installer.git $TMP_DIR
 
