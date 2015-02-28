@@ -55,8 +55,10 @@ php56
 php56-apcu
 php56-mcrypt
 php56-memcached
+php56-opcache
 php56-tidy
 php56-uuid
+php56-xdebug
 pkg-config
 pwgen
 readline
