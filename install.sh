@@ -43,6 +43,10 @@ source $HOME/.bash_profile
 cat $TMP_DIR/homebrew.list | xargs brew install --force -
 cat $TMP_DIR/homebrew-cask.list | xargs brew cask install --force -
 
+# Initialize vim, composer and npm.
+bash <(curl -sL https://raw.githubusercontent.com/pantarei/vundle-installer/master/install.sh)
+bash <(curl -sL https://raw.githubusercontent.com/pantarei/composer-installer/master/install.sh)
+
 # Post-install cleanup
 ln -sfv /usr/local/opt/tor/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.tor.plist
