@@ -1,9 +1,10 @@
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export PATH=$HOME/.composer/vendor/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
+export PATH=$HOME/.composer/vendor/bin:$PATH
+export PATH=$HOME/bin:$PATH
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export STUDIO_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk
