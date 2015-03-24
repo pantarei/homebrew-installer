@@ -53,6 +53,7 @@ p7zip
 pcre
 php56
 php56-apcu
+php56-igbinary
 php56-mcrypt
 php56-memcached
 php56-tidy
