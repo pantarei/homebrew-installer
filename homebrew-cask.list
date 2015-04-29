@@ -22,6 +22,7 @@ font-bebas-neue
 font-cabin
 font-dejavu-sans
 font-fontawesome
+font-lato
 font-montserrat
 font-noto-sans
 font-noto-sans-japanese
@@ -32,6 +33,7 @@ font-noto-sans-t-chinese
 font-noto-serif
 font-open-sans
 font-pt-sans
+font-raleway
 font-ubuntu
 gimp
 github
@@ -53,6 +55,7 @@ mysqlworkbench
 origin
 osxfuse
 owasp-zap
+owncloud
 pandoc
 playonmac
 scribus
