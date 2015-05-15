@@ -8,22 +8,22 @@ TMP_DIR=`mktemp -d -t homebrew-installer.XXXXXX`
 
 # Install Homebrew.
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update && brew upgrade && brew doctor
+brew update && brew upgrade --all && brew doctor
 
 # Install Homebrew Cask.
 brew install caskroom/cask/brew-cask
-brew update && brew upgrade && brew doctor
+brew update && brew upgrade --all && brew doctor
 
 # Install dep packages.
 brew install wget git curl coreutils
-brew cask install xquartz
+brew cask install --force xquartz
 PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 
 # Install Homebrew-PHP.
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
-brew update && brew upgrade && brew doctor
+brew update && brew upgrade --all && brew doctor
 brew install php56
 
 # Install Caskroom-fonts.
