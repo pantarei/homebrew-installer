@@ -16,7 +16,7 @@ brew update && brew upgrade --all && brew doctor
 
 # Install dep packages.
 brew install wget git curl coreutils
-brew cask install --force xquartz
+brew cask install xquartz
 PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 
 # Install Homebrew-PHP.
