@@ -8,11 +8,11 @@ TMP_DIR=`mktemp -d -t homebrew-installer.XXXXXX`
 
 # Install Homebrew.
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew update && brew upgrade --all && brew doctor
+brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 
 # Install Homebrew Cask.
 brew install caskroom/cask/brew-cask
-brew update && brew upgrade --all && brew doctor
+brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 
 # Install dep packages.
 brew install wget git curl coreutils
@@ -23,7 +23,7 @@ PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
-brew update && brew upgrade --all && brew doctor
+brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 brew install php56
 
 # Install Caskroom-fonts.
@@ -42,6 +42,7 @@ source $HOME/.bash_profile
 # Install packages.
 cat $TMP_DIR/homebrew.list | xargs brew install --force -
 cat $TMP_DIR/homebrew-cask.list | xargs brew cask install --force -
+brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 
 # Initialize vim, composer and npm.
 bash <(curl -sL https://raw.githubusercontent.com/pantarei/vundle-installer/master/install.sh)
