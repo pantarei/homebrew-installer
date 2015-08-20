@@ -61,6 +61,7 @@ pango
 pcre
 php56
 php56-apcu
+php56-crypto
 php56-geoip
 php56-igbinary
 php56-mcrypt
@@ -68,7 +69,9 @@ php56-memcached
 php56-opcache
 php56-ssh2
 php56-tidy
+php56-twig
 php56-uuid
+php56-xdebug
 pixman
 pkg-config
 pwgen
