@@ -7,7 +7,7 @@ Run this script with:
 
     /bin/bash <(curl -fsSL https://raw.githubusercontent.com/pantarei/homebrew-installer/master/install.sh)
 
-For cleanup and reinstall:
+For cleanup before reinstall:
 
     rm -rf /usr/local/Cellar /usr/local/.git && brew cleanup && brew prune
 
