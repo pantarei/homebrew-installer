@@ -46,6 +46,7 @@ libtiff
 libtool
 libusb
 libusb-compat
+libxml2
 libyaml
 little-cms2
 mcrypt
@@ -79,6 +80,7 @@ readline
 rename
 ruby
 sane-backends
+tidy-html5
 tor
 unixodbc
 unrar
