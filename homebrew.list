@@ -8,8 +8,10 @@ bmon
 brew-cask
 cabextract
 cairo
+cmake
 colordiff
 composer
+confuse
 coreutils
 cscope
 curl
@@ -33,6 +35,7 @@ harfbuzz
 htop-osx
 hub
 icu4c
+igbinary
 jasper
 jpeg
 libevent
@@ -49,6 +52,7 @@ libusb-compat
 libxml2
 libyaml
 little-cms2
+makedepend
 mcrypt
 memcached
 mhash
