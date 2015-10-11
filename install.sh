@@ -32,6 +32,9 @@ brew tap caskroom/fonts
 # Install Homebrew-completions.
 brew tap homebrew/completions
 
+# Install homebrew-cask-versions.
+brew tap caskroom/versions
+
 # Clone repo into temp folder.
 git clone https://github.com/pantarei/homebrew-installer.git $TMP_DIR
 
