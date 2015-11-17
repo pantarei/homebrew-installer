@@ -24,7 +24,7 @@ brew tap homebrew/versions
 brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 
 # Install dep packages.
-brew install wget git curl coreutils php56
+brew install wget git curl coreutils php70
 brew cask install xquartz
 PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 
