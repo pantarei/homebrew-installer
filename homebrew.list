@@ -68,7 +68,6 @@ p7zip
 pango
 pcre
 php70
-php70-crypto
 php70-intl
 php70-mcrypt
 php70-memcached
@@ -76,6 +75,7 @@ php70-opcache
 php70-pcntl
 php70-snmp
 php70-tidy
+php70-xdebug
 php70-yaml
 pixman
 pkg-config
