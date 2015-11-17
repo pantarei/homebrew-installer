@@ -70,7 +70,6 @@ pcre
 php70
 php70-intl
 php70-mcrypt
-php70-memcached
 php70-opcache
 php70-pcntl
 php70-snmp
