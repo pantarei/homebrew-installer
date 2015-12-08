@@ -20,6 +20,7 @@ brew tap caskroom/versions
 brew tap homebrew/completions
 brew tap homebrew/dupes
 brew tap homebrew/homebrew-php
+brew tap homebrew/services
 brew tap homebrew/versions
 brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 

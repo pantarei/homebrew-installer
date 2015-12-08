@@ -91,6 +91,7 @@ php70-xdebug
 pixman
 pkg-config
 pngcrush
+postgresql
 pwgen
 readline
 rename
