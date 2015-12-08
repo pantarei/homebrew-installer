@@ -39,6 +39,7 @@ cp $TMP_DIR/.bash_profile $HOME/
 source $HOME/.bash_profile
 
 # Install packages.
+brew cask uninstall --force adobe-reader
 cat $TMP_DIR/homebrew.list | xargs brew install --force -
 cat $TMP_DIR/homebrew-cask.list | xargs brew cask install --force -
 brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
