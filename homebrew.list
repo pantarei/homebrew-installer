@@ -7,6 +7,7 @@ bash-git-prompt
 bmon
 boost
 brew-cask
+brew-cask-completion
 cabextract
 cairo
 cmake
@@ -54,6 +55,7 @@ libusb-compat
 libxml2
 libyaml
 little-cms2
+lynx
 makedepend
 mcrypt
 memcached
@@ -67,9 +69,22 @@ openssl
 p7zip
 pango
 pcre
+php56
+php56-apcu
+php56-igbinary
+php56-intl
+php56-mcrypt
+php56-memcached
+php56-opcache
+php56-pcntl
+php56-snmp
+php56-tidy
+php56-xdebug
 php70
+php70-apcu
 php70-intl
 php70-mcrypt
+php70-memcached
 php70-opcache
 php70-pcntl
 php70-snmp
@@ -86,6 +101,7 @@ sane-backends
 ssh-copy-id
 tidy-html5
 tor
+tree
 unixodbc
 unrar
 unzip
