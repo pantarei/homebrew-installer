@@ -74,7 +74,6 @@ php56-apcu
 php56-igbinary
 php56-intl
 php56-mcrypt
-php56-memcached
 php56-opcache
 php56-pcntl
 php56-snmp
@@ -84,7 +83,6 @@ php70
 php70-apcu
 php70-intl
 php70-mcrypt
-php70-memcached
 php70-opcache
 php70-pcntl
 php70-snmp
