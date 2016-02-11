@@ -27,8 +27,9 @@ brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 # Install dep packages.
 brew install wget git curl coreutils
 brew cask install xquartz
-brew install php56; brew unlink php56
-brew install php70; brew link php70
+for VERSION in php53 php54 php55 php56 php70; do
+    brew install $VERSION; brew unlink $VERSION
+done
 PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 
 # Clone repo into temp folder.
