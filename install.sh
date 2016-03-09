@@ -28,8 +28,19 @@ brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 brew install wget git curl coreutils
 brew cask install xquartz
 for VERSION in php53 php54 php55 php56 php70; do
-    brew install $VERSION; brew unlink $VERSION
+    brew unlink $VERSION
 done
+for VERSION in php53 php54 php55 php56 php70; do
+    brew link $VERSION
+    brew install $VERSION
+    brew upgrade $VERSION
+    for EXT in apcu intl mcrypt opcache pcntl snmp tidy uuid xdebug; do
+        brew install $VERSION-$EXT
+        brew upgrade $VERSION-$EXT
+    done
+    brew unlink $VERSION
+done
+brew link php70
 PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 
 # Clone repo into temp folder.
