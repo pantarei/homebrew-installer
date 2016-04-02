@@ -10,9 +10,8 @@ TMP_DIR=`mktemp -d -t homebrew-installer.XXXXXX`
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 
-# Install Homebrew Cask.
-brew install caskroom/cask/brew-cask
-brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
+# Uninstall Homebrew Cask.
+brew uninstall --force brew-cask; brew update
 
 # Tap all required projects.
 brew tap caskroom/fonts
