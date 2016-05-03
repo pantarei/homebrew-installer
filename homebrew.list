@@ -9,6 +9,7 @@ boost
 brew-cask-completion
 cabextract
 cairo
+cask-repair
 cmake
 colordiff
 composer
@@ -35,6 +36,7 @@ graphviz
 grunt-completion
 gzip
 harfbuzz
+hr
 htop-osx
 hub
 icu4c
