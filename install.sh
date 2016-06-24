@@ -21,6 +21,7 @@ brew tap homebrew/dupes
 brew tap homebrew/homebrew-php
 brew tap homebrew/services
 brew tap homebrew/versions
+brew tap vitorgalvao/tiny-scripts
 brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 
 # Install dep packages.
