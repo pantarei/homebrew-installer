@@ -23,6 +23,7 @@ fontconfig
 fontforge
 freetype
 gd
+gdbm
 geoip
 gettext
 git
@@ -76,6 +77,7 @@ ossp-uuid
 p7zip
 pango
 pcre
+perl
 php53
 php53-apcu
 php53-intl
@@ -133,6 +135,7 @@ pngcrush
 poppler
 postgresql
 pwgen
+python
 readline
 rename
 ruby
@@ -148,6 +151,7 @@ unrar
 unzip
 vim
 watch
+webp
 wget
 wine
 winetricks

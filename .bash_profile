@@ -3,18 +3,18 @@ LC_ALL=en_US.UTF-8
 
 PATH="/usr/local/bin:$PATH"
 PATH="/usr/local/sbin:$PATH"
-PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+#PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+#PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="$HOME/.composer/vendor/bin:$PATH"
 
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
+#MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+#MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
 
-ANDROID_HOME=/usr/local/opt/android-sdk
-STUDIO_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk
+#ANDROID_HOME=/usr/local/opt/android-sdk
+#STUDIO_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk
 
 if [ -x /usr/local/opt/coreutils/libexec/gnubin/dircolors ]; then
-    eval "$(dircolors -b)"
+    eval "$(/usr/local/opt/coreutils/libexec/gnubin/dircolors -b)"
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
