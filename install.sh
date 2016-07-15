@@ -4,7 +4,7 @@ set -o xtrace
 
 # Define variables.
 BRANCH="master"
-PWD=`pwd`
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Install Homebrew.
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -42,13 +42,13 @@ brew cask install xquartz
 brew install php70 --without-apache
 
 # Copy .bash_profile.
-cp $PWD/.bash_profile $HOME/
+cp $DIR/.bash_profile $HOME/
 source $HOME/.bash_profile
 
 # Install packages.
 brew cask uninstall --force adobe-reader blender
-cat $PWD/homebrew.list | xargs brew install --force -
-cat $PWD/homebrew-cask.list | xargs brew cask install --force -
+cat $DIR/homebrew.list | xargs brew install --force -
+cat $DIR/homebrew-cask.list | xargs brew cask install --force -
 brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 
 # Initialize vim, composer and npm.
