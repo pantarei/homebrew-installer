@@ -39,6 +39,7 @@ EOF
 # Install dep packages.
 brew install wget git curl coreutils
 brew cask install xquartz
+brew install python
 brew install php70 --without-apache
 
 # Copy .bash_profile.
