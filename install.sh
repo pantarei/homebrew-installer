@@ -44,7 +44,7 @@ for VERSION in php53 php54 php55 php56 php70; do
 done
 for VERSION in php53 php54 php55 php56 php70; do
     brew link $VERSION
-    brew install $VERSION
+    brew install $VERSION --without-apache
     brew upgrade $VERSION
     for EXT in apcu intl mcrypt opcache pcntl snmp tidy uuid xdebug; do
         brew install $VERSION-$EXT
