@@ -5,7 +5,9 @@ Wrapper for [homebrew](https://github.com/Homebrew/homebrew) installation.
 
 Run this script with:
 
-    /bin/bash <(curl -fsSL https://raw.githubusercontent.com/pantarei/homebrew-installer/master/install.sh)
+    $ git clone https://github.com/pantarei/homebrew-installer.git /tmp/homebrew-installer
+    $ cd /tmp/homebrew-installer
+    $ ./install.sh
 
 For cleanup before reinstall:
 
@@ -16,3 +18,4 @@ License
 
 -   The library is licensed under the [MIT
     License](http://opensource.org/licenses/MIT)
+

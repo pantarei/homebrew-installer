@@ -4,7 +4,7 @@ set -o xtrace
 
 # Define variables.
 BRANCH="master"
-TMP_DIR=`mktemp -d -t homebrew-installer.XXXXXX`
+PWD=`pwd`
 
 # Install Homebrew.
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -39,33 +39,16 @@ EOF
 # Install dep packages.
 brew install wget git curl coreutils
 brew cask install xquartz
-for VERSION in php53 php54 php55 php56 php70; do
-    brew unlink $VERSION
-done
-for VERSION in php53 php54 php55 php56 php70; do
-    brew link $VERSION
-    brew install $VERSION --without-apache
-    brew upgrade $VERSION
-    for EXT in apcu intl mcrypt opcache pcntl snmp tidy uuid xdebug; do
-        brew install $VERSION-$EXT
-        brew upgrade $VERSION-$EXT
-    done
-    brew unlink $VERSION
-done
-brew link php70
-PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
-
-# Clone repo into temp folder.
-git clone https://github.com/pantarei/homebrew-installer.git $TMP_DIR
+brew install php70 --without-apache
 
 # Copy .bash_profile.
-cp $TMP_DIR/.bash_profile $HOME/
+cp $PWD/.bash_profile $HOME/
 source $HOME/.bash_profile
 
 # Install packages.
 brew cask uninstall --force adobe-reader blender
-cat $TMP_DIR/homebrew.list | xargs brew install --force -
-cat $TMP_DIR/homebrew-cask.list | xargs brew cask install --force -
+cat $PWD/homebrew.list | xargs brew install --force -
+cat $PWD/homebrew-cask.list | xargs brew cask install --force -
 brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 
 # Initialize vim, composer and npm.
