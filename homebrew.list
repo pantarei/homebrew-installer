@@ -2,7 +2,7 @@ ansible
 ant
 autoconf
 bash
-bash-completion
+bash-completion2
 bash-git-prompt
 bmon
 boost
@@ -13,6 +13,7 @@ cask-repair
 cmake
 colordiff
 composer
+composer-completion
 confuse
 coreutils
 cscope
@@ -34,6 +35,7 @@ gnu-sed
 gnutls
 gobject-introspection
 graphviz
+grep
 grunt-completion
 gzip
 harfbuzz
@@ -44,6 +46,7 @@ icu4c
 igbinary
 jasper
 jpeg
+launchctl-completion
 libevent
 libffi
 libgphoto2

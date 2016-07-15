@@ -13,15 +13,12 @@ PATH="$HOME/.composer/vendor/bin:$PATH"
 #ANDROID_HOME=/usr/local/opt/android-sdk
 #STUDIO_JDK=/Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk
 
-if [ -x /usr/local/opt/coreutils/libexec/gnubin/dircolors ]; then
-    eval "$(/usr/local/opt/coreutils/libexec/gnubin/dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+if [ -x /usr/local/bin/gdircolors ]; then
+    eval "$(gdircolors -b)"
+    alias ls='gls --color=auto'
+    alias grep='ggrep --color=auto'
+    alias fgrep='gfgrep --color=auto'
+    alias egrep='gegrep --color=auto'
 fi
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
