@@ -87,7 +87,6 @@ php70-intl
 php70-mcrypt
 php70-opcache
 php70-pcntl
-php70-snmp
 php70-tidy
 php70-uuid
 php70-xdebug
