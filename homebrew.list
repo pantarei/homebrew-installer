@@ -2,7 +2,7 @@ ansible
 ant
 autoconf
 bash
-bash-completion2
+bash-completion
 bash-git-prompt
 bmon
 boost
