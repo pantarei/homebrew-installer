@@ -103,7 +103,6 @@ ruby
 sane-backends
 sqlite
 ssh-copy-id
-subversion
 tidy-html5
 tor
 tree
