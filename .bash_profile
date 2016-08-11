@@ -3,8 +3,8 @@ export LC_ALL=en_US.UTF-8
 
 PATH="/usr/local/bin:$PATH"
 PATH="/usr/local/sbin:$PATH"
-#PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-#PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="$HOME/.composer/vendor/bin:$PATH"
 
 #MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
