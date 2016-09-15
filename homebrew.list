@@ -20,6 +20,7 @@ cscope
 curl
 czmq
 dos2unix
+doxygen
 fontconfig
 fontforge
 freetype
@@ -77,6 +78,7 @@ openjpeg
 openssl
 ossp-uuid
 p7zip
+pandoc
 pango
 pcre
 perl
