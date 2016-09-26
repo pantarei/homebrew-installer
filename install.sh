@@ -24,18 +24,6 @@ brew tap homebrew/versions
 brew tap vitorgalvao/tiny-scripts
 brew update && brew upgrade --all && brew cleanup && brew prune && brew doctor
 
-# Patch homebrew-cask for sierra.
-cd "$(brew --repository)/Library/Taps/caskroom/homebrew-cask"
-cat << EOF | patch -p1
-diff --git a/lib/hbc/container/zip.rb b/lib/hbc/container/zip.rb
-index 8118f9c..a8f26d7 100644
---- a/lib/hbc/container/zip.rb
-+++ b/lib/hbc/container/zip.rb
-@@ -3 +3 @@ class Hbc::Container::Zip < Hbc::Container::Base
--    criteria.file.include? "compressed-encoding=application/zip;"
-+    criteria.file.include? "application/zip;"
-EOF
-
 # Install dep packages.
 brew install wget git curl coreutils
 brew cask install xquartz
