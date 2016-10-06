@@ -21,6 +21,7 @@ curl
 czmq
 dos2unix
 doxygen
+findutils
 fontconfig
 fontforge
 freetype
@@ -41,6 +42,7 @@ grunt-completion
 gzip
 harfbuzz
 hr
+htop
 htop-osx
 hub
 icu4c
@@ -83,13 +85,16 @@ ossp-uuid
 p7zip
 pandoc
 pango
+patchutils
 pcre
 perl
 php70
 php70-apcu
 php70-apcu-bc
+php70-igbinary
 php70-intl
 php70-mcrypt
+php70-memcached
 php70-opcache
 php70-pcntl
 php70-tidy
