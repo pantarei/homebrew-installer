@@ -80,6 +80,7 @@ nmap
 node
 openjpeg
 openssl
+openssl@1.1
 openvpn
 ossp-uuid
 p7zip
@@ -91,8 +92,10 @@ perl
 php70
 php70-apcu
 php70-apcu-bc
+php70-igbinary
 php70-intl
 php70-mcrypt
+php70-memcached
 php70-opcache
 php70-pcntl
 php70-tidy
@@ -103,6 +106,7 @@ pkg-config
 pngcrush
 poppler
 postgresql
+putty
 pwgen
 python
 readline
