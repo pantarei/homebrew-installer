@@ -7,13 +7,12 @@ BRANCH="master"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Install Homebrew.
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update && brew upgrade && brew cleanup && brew prune && brew doctor
 
 # Tap all required projects.
 brew tap caskroom/fonts
 brew tap caskroom/versions
-brew tap homebrew/completions
 brew tap homebrew/dupes
 brew tap homebrew/homebrew-php
 brew tap homebrew/services
