@@ -13,7 +13,6 @@ cask-repair
 cmake
 colordiff
 composer
-composer-completion
 confuse
 coreutils
 cscope
