@@ -5,7 +5,7 @@ PATH="/usr/local/bin:$PATH"
 PATH="/usr/local/sbin:$PATH"
 #PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 #PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-PATH="$HOME/.composer/vendor/bin:$PATH"
+PATH="$PATH:$HOME/.composer/vendor/bin"
 
 #MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 #MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
