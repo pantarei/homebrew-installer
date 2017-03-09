@@ -85,6 +85,7 @@ openjpeg
 openssl
 openssl@1.1
 openvpn
+optipng
 ossp-uuid
 p11-kit
 p7zip
@@ -125,6 +126,7 @@ readline
 rename
 ruby
 sane-backends
+sdl
 sqlite
 ssh-copy-id
 tidy-html5
