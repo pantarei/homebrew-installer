@@ -41,7 +41,4 @@ bash <(curl -sL https://raw.githubusercontent.com/pantarei/composer-installer/ma
 bash <(curl -sL https://raw.githubusercontent.com/pantarei/npm-installer/master/install.sh)
 
 # Post-install cleanup
-open /opt/homebrew-cask/Caskroom/utorrent/latest/uTorrent.app
-ln -sfv /usr/local/opt/tor/*.plist ~/Library/LaunchAgents
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.tor.plist
 defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
