@@ -31,8 +31,8 @@ cp $DIR/.bash_profile $HOME/
 source $HOME/.bash_profile
 
 # Install packages.
-cat $DIR/homebrew.list | xargs brew install --force -
-cat $DIR/homebrew-cask.list | xargs brew cask install --force -
+cat $DIR/homebrew.list | xargs brew install --force
+cat $DIR/homebrew-cask.list | xargs brew cask install --force
 brew update && brew upgrade && brew cleanup && brew prune && brew doctor
 
 # Initialize vim, composer and npm.
